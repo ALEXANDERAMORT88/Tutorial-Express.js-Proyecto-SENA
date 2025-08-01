@@ -81,7 +81,8 @@ h1 {
 
 .img_terminal {
     border-radius: 5px;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
     display: grid;
     place-content: center;
 }
@@ -128,11 +129,13 @@ ul {
     grid-area: numero_dos;
 }
 
-.Ejemplo_Script, .img_proyecto_express {
-    width: 900px;
+.Ejemplo_Script,
+.img_proyecto_express {
+    width: 100%;
+    max-width: 900px;
     height: auto;
     border-radius: 5px;
-    padding-top: 15px;
+    margin-top: 15px;
 }
 
 .crear_proyecto {
@@ -152,8 +155,19 @@ ul {
         'img_crear contenido_crear5';
 }
 
-.contenido_crear1, .contenido_crear3, .contenido_crear5, .h1_centrar, .img_inicializando, .img_instalando {
-    width: 950px;
+.contenido_crear1,
+.contenido_crear3,
+.contenido_crear5,
+.h1_centrar,
+.img_inicializando,
+.img_instalando,
+.h1_servidor,
+.archivo,
+.h1_ejecutar,
+.contenido_ejecutar,
+.servidor_corriendo {
+    width: 100%;
+    max-width: 950px;
     margin: 8px;
     display: grid;
     align-items: center;
@@ -170,4 +184,216 @@ ul {
     height: 79px;
 }
 
+.crear_servidor {
+    background-color: var(--color-fondo_contenido);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 85px 1fr;
+    grid-template-rows: 65px 1fr;
+    grid-template-areas:
+        'img_servidor h1_servidor'
+        'img_servidor archivo'
+        'img_servidor img_servidor_basico';
+}
 
+.img_servidor {
+    grid-area:img_servidor;
+    margin: 12px;
+    width: 69px;
+    height: 79px;
+}
+
+.img_servidor_basico,
+.img_ejecuntando_script {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.ejecutar_servidor {
+    background-color: var(--color-fondo_contenido);
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 85px 1fr;
+    grid-template-rows: 65px 1fr;
+    grid-template-areas: 
+    'img_ejecuar_servidor h1_ejecutar'
+    'img_ejecuar_servidor contenido_ejecutar'
+    'img_ejecuar_servidor img_ejecuntando_script'
+    'img_ejecuar_servidor servidor_corriendo';
+}
+
+.img_ejecuar_servidor {
+    grid-area: img_ejecuar_servidor;
+    margin: 12px;
+    width: 69px;
+    height: 79px;
+}
+
+.pie_de_pagina {
+    background-color: rgb(1, 124, 83);
+    height: 200px;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+
+}
+
+.izq {
+    display: grid;
+    place-content: center;
+}
+
+.logo_sena {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.centro {
+    text-align: center;
+    margin: 45px;
+    display: grid;
+    justify-content: start;
+}
+
+/* Responsive para pantallas menores a 900px */
+@media (max-width: 900px) {
+    .contenido,
+    .crear_proyecto,
+    .crear_servidor,
+    .ejecutar_servidor,
+    .contenedor_requisitos,
+    .contenedor_verificar {
+        padding: 20px;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .Ejemplo_Script,
+    .img_proyecto_express,
+    .img_servidor_basico,
+    .img_ejecuntando_script {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contenido_crear1,
+    .contenido_crear3,
+    .contenido_crear5,
+    .h1_centrar,
+    .img_inicializando,
+    .img_instalando,
+    .h1_servidor,
+    .archivo,
+    .h1_ejecutar,
+    .contenido_ejecutar,
+    .servidor_corriendo {
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    .pie_de_pagina {
+        grid-template-columns: 1fr;
+        height: auto;
+        text-align: center;
+    }
+
+    .izq {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .centro {
+        margin: 10px 0;
+        justify-content: center;
+    }
+}
+
+/* Responsive para pantallas menores a 600px */
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    .logo_express,
+    .logo_sena,
+    .img_crear,
+    .img_servidor,
+    .img_ejecuar_servidor {
+        width: 50px;
+        height: auto;
+    }
+
+    .contenido_titulo {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Responsive para pantallas menores a 400px */
+@media (max-width: 400px) {
+    body {
+        font-size: 13px;
+        padding: 2px;
+    }
+    .contenido,
+    .crear_proyecto,
+    .crear_servidor,
+    .ejecutar_servidor,
+    .contenedor_requisitos,
+    .contenedor_verificar {
+        padding: 5px;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .contenido_titulo {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .logo_express,
+    .logo_sena,
+    .img_crear,
+    .img_servidor,
+    .img_ejecuar_servidor {
+        width: 35px;
+        height: auto;
+    }
+    h1, h2, h3 {
+        font-size: 1em;
+        word-break: break-word;
+    }
+    .Ejemplo_Script,
+    .img_proyecto_express,
+    .img_servidor_basico,
+    .img_ejecuntando_script {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+    .pie_de_pagina {
+        grid-template-columns: 1fr;
+        height: auto;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .centro {
+        margin: 5px 0;
+        padding: 0 2px;
+        font-size: 0.95em;
+    }
+    .izq {
+        margin-bottom: 5px;
+    }
+    .nota {
+        grid-template-columns: 30px 1fr;
+        padding: 0 0 15px 10px;
+    }
+    .lista {
+        padding: 0 0 10px 10px;
+    }
+    ul {
+        padding-left: 15px;
+    }
+}
