@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Express', sans-serif;
+}
+
+:root {
+    --color-titulos:rgb(9, 47, 34);
+    --color-fondo_contenido:  rgb(210, 225, 210);
+}
+
+.logo_express{
+    height: 80px;
+    width: auto;
+}
+
+h1{
+    color: var(--color-titulos);
+}
+
+.contenido_desvcripcion{
+    background: var(--color-fondo_contenido);
+    height: 100px;
+    border-radius: 5px;
+    padding: 10px;
+    display: grid;
+    place-content: center;
+}
+
+.contenido_titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: var(--color-titulos);
+}
+
+.contenido{
+    padding: 50px;
+    display: grid;
+    place-content: center;
+    gap: 20px;
+}
+
+.contenedor_requisitos{
+    background-color: var(--color-fondo_contenido);
+    border-radius: 5px;
+    padding: 10px;
+    display: grid;
+}
+
+.requisitos_previos{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+}
