@@ -1,39 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <title>  Express desde cero</title>
+    <title> Express desde cero</title>
     <link rel="icon" href="./img/icons8-express-js-16.png">
 </head>
+
 <body>
 
     <div class="contenido">
 
-        <div class="contenido_titulo">
-            <h1> Tutorial de Express desde cero</h1>
-            <img class="logo_express" src="./img/Logo-expresar-js-80.png" alt="">
-        </div>
+        <header>
+            <div class="contenido_titulo">
+                <h1> Tutorial de Express desde cero</h1>
+                <img class="logo_express" src="./img/Logo-expresar-js-80.png" alt="">
+            </div>
+        </header>
 
-        <div class="contenido_desvcripcion">
+
+
+        <section class="contenido_desvcripcion">
             <h1>¿Que es Express?</h1>
-            <p>Express es un framework minimalista para Node.js que permite crear aplicaciones web y APIs de forma sencilla y rápida.</p>
-        </div>
+            <p>Express es un framework minimalista para Node.js que permite crear aplicaciones web y APIs de forma
+                sencilla y rápida.</p>
+        </section>
 
-        <div class="contenedor_requisitos">
+        <section class="contenedor_requisitos">
+
             <h1>Requisitos previos</h1>
-        <p>Antes de comenzar a trabajar con Express, es importante cumplir con los siguientes requisitos:</p>
+            <p>Antes de comenzar a trabajar con Express, es importante cumplir con los siguientes requisitos:</p>
 
-        <ul class="requisitos_previos">
-            <li><img src="./img/img uno .png" alt=""></li>
-            <h2>Tener instalado Node.js</h2>
-        </ul>
-        </div>
+            <div class="requisitos_previos1">
+
+                <img class="numero_uno" src="./img/Letra A.png" alt="">
+                <h2 class="h2_centrar">Tener instalado Node.js</h2>
+                <p class="p_descripcion">Node.js es un entorno de ejecución para JavaScript del lado del servidor.
+                    Express se ejecuta sobre Node.js, así que es fundamental tenerlo instalado.</p>
+
+            </div>
+
+        </section>
+
+        <section class="contenedor_verificar">
+
+            <h3 class="h3_centrar">¿Cómo verificar si ya tienes Node.js instalado?</h3>
+            <p class="descripcion_terminal">Abre una terminal y escribe:</p>
+
+            <figure class="img_terminal">
+                <img class="img_terminal" src="./img/Terminal node -v.png" alt="">
+                <figcaption>Si ves una versión como v22.12.0, significa que ya está instalado.
+                </figcaption>
+            </figure>
+
+            <section class="contenedor_instalacion">
+
+                <h3 class="h3_centrar">¿Cómo instalar Node.js?</h3>
+
+                <ul class="lista">
+                    <li>Ve al sitio oficial: <a href="https://nodejs.org/es">https://nodejs.org/es</a> </li>
+                    <li>Descarga la versión recomendada (LTS)</li>
+                    <li>Sigue los pasos del instalador según tu sistema operativo (Windows, macOS o Linux)</li>
+                </ul>
+
+                <div class="nota">
+
+                    <img class="mano_nota" src="./img/mano-nota.png" alt="">
+                    <div>
+                        <strong>Nota:</strong>
+                        <p> Al instalar Node.js también se instala npm (Node Package Manager), que es esencial para
+                            instalar Express y otros paquetes.</p>
+                    </div>
+
+                </div>
+            </section>
+
+        </section>
+
+        <section class="contenedor_requisitos">
+
+            <div class="requisitos_previos2">
+
+                <img class="numero_dos" src="./img/Letra B.png" alt="">
+                <h2 class="h2_centrar">Tener conocimientos básicos de JavaScript</h2>
+                <p class="p_descripcion">Para trabajar con Express necesitas entender conceptos esenciales de
+                    JavaScript, como:</p>
+                <ul>
+                    <li>Variables (let, const)</li>
+                    <li>Funciones y funciones flecha</li>
+                    <li>Objetos y arreglos</li>
+                    <li>Callbacks y promesas</li>
+                    <li>Manejo del DOM (opcional para backend, pero útil en general)</li>
+                    <li>Sintaxis moderna (ES6+)</li>
+                </ul>
+
+                <div style="padding-top: 20px;">
+                    <p>Ejemplo básico en JavaScript</p>
+                    <img class="Ejemplo_Script" src="./img/Ejemplo JavaScript.png" alt="">
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="crear_proyecto">
+
+            <img class="img_crear" src="./img/Crear proyecto.png" alt="">
+            <h1 class="h1_centrar">1. Crear el proyecto</h1>
+            <p class="contenido_crear1">En este paso inicial vamos a preparar el entorno de trabajo para nuestra
+                aplicación Express.
+                Primero, creamos una carpeta donde estará nuestro proyecto y nos movemos dentro de ella:</p>
+
+            <img class="img_proyecto_express" src="./img/img creando aplicacion con express.png" alt="">
+            <figcaption class="contenido_crear2">
+                Luego, inicializamos un proyecto de Node.js con el siguiente comando:
+            </figcaption>
+
+            <img class="img_inicializando" src="./img/inicializando express.png" alt="">
+            <figcaption class="contenido_crear3">Esto creará un archivo package.json que es como el corazón de tu
+                proyecto:
+                guarda información sobre el nombre, versión y dependencias que vas a usar.
+            </figcaption>
+
+            <p class="contenido_crear4">Finalmente, instalamos Express con:</p>
+            <img class="img_instalando" src="./img/img Instalando express .png" alt="">
+            <figcaption class="contenido_crear5">Este comando descarga e incluye Express como dependencia en tu proyecto para que puedas comenzar
+                a usarlo en tus archivos JavaScript.
+            </figcaption>
+
+        </section>
+
+        <secttion class="crear_servidor">
+            
+        </secttion>
 
     </div>
 
 
-    
+
 </body>
+
 </html>
